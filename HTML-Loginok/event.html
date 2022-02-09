@@ -1,0 +1,183 @@
+<!DOCTYPE html><!-- 이벤트 -->
+<html lang="ko">
+
+<!-- head 시작 --> 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content = "프로젝트">
+    <meta name="keywords" content="CGV, 유튜브, 영화, 넷플릭스, 티빙, 왓챠, 웨이브">
+    <title>유니버스(Universe)</title> 
+    <link rel = "stylesheet" type="text/css" href="../CSS/event.css"> 
+	<link rel="shortcut icon" href="../image/universe.ico"> <!-- 파비콘 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&amp;subset=korean" rel="stylesheet">
+</head>
+<!-- head 끝 -->
+
+<!-- body 시작 -->
+<body>
+    <!-- header 시작-->	
+    <header class = "header_menu"> 
+        <div class="container">
+			<nav class="nav_menu">
+				<ul class="clearfix">  
+					<li><a href="../HTML/event.html">로그아웃</a></li> 
+					<li><a href="jjim.html">찜</a></li>
+					<li><a href="event.html">이벤트</a></li>
+				</ul>
+			</nav>    
+        </div>
+    </header>
+	
+	<header class = "header_genre">
+		<div class = "container">
+			<div class="header"> 
+				<h1>
+					<span id="logo" style = "color:white">
+						<div><a href = "index.html" style = "color: white;">Universe</a></div>	
+					</span>   
+				</h1>  
+				<nav class="nav_genre">
+					<ul class="clearfix2">  
+						<li><a href="drama.html">드라마</a></li>
+						<li><a href="romance.html">로맨스</a></li>
+						<li><a href="comedy.html">코미디</a></li> 
+						<li><a href="action.html">액션/범죄</a></li>
+						<li><a href="horror.html">공포/스릴러</a></li>
+						<div class="search-box">
+							<input type="text" class="search-txt" name=""placeholder="검색어를 입력하세요">
+							<a class="search-btn" href="#">  <!-- 검색ui 구성 --> 
+								<i class="fas fa-search"></i>
+							</a>
+						</div>
+					</ul>
+				</nav>  
+			</div>
+		</div>
+	</header>
+	<!-- header 끝 -->
+	
+	<!-- 이벤트 시작 -->
+	<div class="container">
+		<div class="movie">
+			<li class = "new_title">이벤트</li> 
+			<div class="movie_slide">
+				<div class="swiper-container2">
+				   <div class="swiper-wrapper">
+					   <div class="swiper-slide">
+						   <div class="event">
+							   <h2>슈퍼 프리미엄</h2>
+							   <br>
+							   <h3>1080P+4K 화질 | 동시 시청 4명 | 모든 디바이스</h3>
+							   <br><br><br>
+							   <button type="button" class="btn" onclick="smonth_buy()">월간 이용권&emsp;&emsp;&emsp;&emsp;월23,900원</button> 
+							   <button type="button" class="btn" onclick="syear_buy()">연간 이용권&emsp;&emsp;&emsp;&emsp;연99,000원</button> 
+						   </div>
+					   </div>
+					   <div class="swiper-slide">
+						   <div class="event">
+							   <h2>프리미엄</h2>
+							   <br>
+							   <h3>1080P 화질 | 동시 시청 2명 | 모든 디바이스</h3>
+							   <br><br><br>
+							   <button type="button" class="btn" onclick="pmonth_buy()">월간 이용권&emsp;&emsp;&emsp;&emsp;월13,900원</button> 
+							   <button type="button" class="btn" onclick="pyear_buy()">연간 이용권&emsp;&emsp;&emsp;&emsp;연77,000원</button> 
+						   </div>
+					   </div>
+					   <div class="swiper-slide">
+						   <div class="event">
+							   <h2>쿠폰등록</h2>
+							   <br>
+							   <h3>쿠폰번호에 숫자0,1은 없습니다</h3>
+							   <h3>영문자 O,l와 혼동하지 않도록 유의해주세요.</h3>
+							   <br>
+							   <input type="text" class="input" placeholder="쿠폰번호를 등록하세요." ID="coupon">
+							   <br><br>
+							   <button type="button" class="btn" onclick="coupon()">등록하기</button> 
+						   </div>
+					   </div>
+					   <div class="swiper-slide">
+						   <div class="event">
+							   <h2>추천인</h2>
+							   <br>
+							   <h3>추천인을 입력하세요</h3>
+							   <h3>추천인과 동시에 쿠폰 5천원을 드립니다.</h3>
+							   <br>
+							   <input type="text" class="input" placeholder="추천인을 입력하세요." ID="recommend">
+							   <br><br>
+							   <button type="button" class="btn" onclick="recommend()">등록하기</button> 
+						   </div>
+					   </div>
+				   </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- 이벤트 끝 -->
+	
+	<hr class = "line">
+	
+	<!-- 랜덤포인트 시작 -->
+	<div class = "container">
+		<div class="lucky_wrapper"> 
+			<div class ="lucky_area">
+				<li class = "new_title2">랜덤 포인트</li>
+				<br>
+				<h2>유니버스와 함께하는 포인트 이벤트!</h2>
+				<h2>매일 최대 10,000원 포인트 받아가세요.</h2>
+				<br>
+				<div style = "text-align:center">
+					<input type="text" class="input" placeholder="전화번호를 입력하세요." ID="lucky">
+					<br><br>
+					<button type="button" class="btn" onclick="lucky()">입력하기</button><br>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 랜덤포인트 끝 -->	
+	
+	<hr class = "line">
+	
+    <!-- footer 시작 -->
+	<div class = "footer">	
+		<footer>
+			<div class="container">
+				<div class="footer_tel">
+					ARS 1588-1829
+				</div>
+			</div>
+			<div class="container">
+				<div class="footer_infor">
+					<span id="logo2">
+						<div style = "color: white">Universe</div>	
+					</span>	
+					<ul>
+						<li>회사소개</li>
+						<li>채용정보</li>
+						<li>제휴/광고 문의</li>
+						<li>이용약관</li>
+						<li>개인정보 처리방침</li>
+						<li>청소년 보호정책</li>
+						<li>고객센터</li>
+					</ul>
+					<address>
+						<p><br>
+						   대표: 임병찬<br>
+						   주소: 청주시 흥덕구 죽천로 146번길 6 메디포스 8층(복대동, 헤라팰리스)<br>
+						   이메일: qud902@naver.com<br>
+						   사업자등록번호: 123-45-67890<br>
+						   클라우드 호스팅: Amazone Web ServicesInc<br><br>
+						   Copyright 2021 by Universe Inc. All right reserved
+						</p>
+					</address>
+				</div>
+			</div>
+		</footer>
+	</div>
+    <!-- footer 끝 -->
+	
+	<!-- 자바스크립트 -->
+	<script type="text/javascript" src="../js/event.js"></script>
+</body>
+</html>

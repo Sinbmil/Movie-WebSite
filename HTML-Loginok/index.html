@@ -1,0 +1,379 @@
+<!DOCTYPE html><!-- 메인 화면-->
+<html lang="ko">
+
+<!-- head 시작 --> 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content = "프로젝트">
+    <meta name="keywords" content="CGV, 유튜브, 영화, 넷플릭스, 티빙, 왓챠, 웨이브">
+    <title>유니버스(Universe)</title> 
+    <link rel="stylesheet" href="../CSS/main.css">
+    <link rel="shortcut icon" href="../image/universe.ico"> <!-- 파비콘 -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&amp;subset=korean" rel="stylesheet">
+</head>
+<!-- head 끝 -->
+
+<!-- body 시작 -->
+<body>
+    <!-- header 시작-->	
+    <header class = "header_menu"> 
+        <div class="container">
+			<nav class="nav_menu">
+				<ul class="clearfix">  
+					<li><a href="../main.html">로그아웃</a></li> 
+					<li><a href="jjim.html">찜</a></li>
+					<li><a href="event.html">이벤트</a></li>
+				</ul>
+			</nav>    
+        </div>
+    </header>
+	
+	<header class = "header_genre">
+		<div class = "container">
+			<div class="header"> 
+				<h1>
+					<span id="logo" style = "color:white">
+						<div><a href = "index.html" style = "color: white;">Universe</a></div>	
+					</span>	
+				</h1> 
+				<nav class="nav_genre">
+					<ul class="clearfix2">  
+						<li><a href="drama.html">드라마</a></li>
+						<li><a href="romance.html">로맨스</a></li>
+						<li><a href="comedy.html">코미디</a></li> 
+						<li><a href="action.html">액션/범죄</a></li>
+						<li><a href="horror.html">공포/스릴러</a></li>
+						<div class="search-box">
+							<input type="text" class="search-txt" name=""placeholder="검색어를 입력하세요">
+							<a class="search-btn" href="#">  <!-- 검색ui 구성 --> 
+								<i class="fas fa-search"></i>
+							</a>
+						</div>
+					</ul>
+				</nav>  
+			</div>
+		</div>
+	</header>
+	<!-- header 끝 -->
+	
+	<!-- banner 시작 -->
+	<section class="banner">
+	   <div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide s1" onclick="location.href='comedy_movie/geukhan.html'"> 
+						<div class="container">
+							<h3>극한직업</h3>
+							<p>지금까지 이런 수사는 없었다!</p>
+						</div>	
+				</div>
+				<div class="swiper-slide s2" onclick="location.href='action_movie/bando.html'">
+					<div class="container">
+						<h3>반도</h3>
+						<p>전대미문의 재난 그 후 4년 폐허의 땅으로 다시 들어간다</p>
+					</div>
+				</div>
+				<div class="swiper-slide s3" onclick="location.href='romance_movie/gyeolhon.html'">
+					<div class="container">
+						<h3>너의 결혼식</h3>
+						<p>다사다난한 그들의 첫사랑 연대기</p>
+					</div>
+				</div>
+				<div class="swiper-slide s4" onclick="location.href='drama_movie/sidong.html'">
+					<div class="container">
+						<h3>시동</h3>
+						<p>인생 뭐 있어? 일단 한번 살아보는 거야!</p>
+					</div>
+				</div>
+				<div class="swiper-slide s5" onclick="location.href='drama_movie/taxi.html'">
+					<div class="container">
+						<h3>택시운전사</h3>
+						<p>1980년 5월 광주, 독일 기자와 함께 탄 택시운전사</p>
+					</div>
+				</div>
+				<!-- 추가하면 슬라이드에 생김 -->
+			</div>
+			<div class="swiper-pagination"></div> 
+			<div class="swiper-button-prev"></div> <!-- 이전 버튼 -->
+			<div class="swiper-button-next"></div> <!-- 다음 버튼 -->
+		</div>
+	</section>
+    <!-- banner 끝 -->
+    
+	<!-- movie 시작 -->
+	<div class="container">
+		<div class="movie">
+			<li class = "new_title">최신 영화</li> 
+			<div class="movie_slide">
+				<div class="swiper-container2">
+				   <div class="swiper-wrapper">
+					   <div class="swiper-slide">
+						   <div class="poster">
+								<a href="action_movie/mogadishu.html">
+									<img src="../image/mogadishu.jpg" alt="모가디슈">
+								</a>
+						   </div>
+						   <div class="moive_title ">
+							   <h3>모가디슈</h3>
+						   </div>
+					   </div>
+					   <div class="swiper-slide">
+						   <div class="poster">
+								<a href="drama_movie/sinkhole.html">
+									<img src="../image/sinkhole.jpg" alt="싱크홀">
+								</a>
+						   </div>
+						   <div class="moive_title ">
+							   <h3>싱크홀</h3>
+						   </div>
+					   </div>
+					   <div class="swiper-slide">
+						   <div class="poster">
+								<a href="drama_movie/barsinjaehan.html">
+									<img src="../image/barsinjaehan.jpg" alt="발신제한">
+								</a>
+						   </div>
+						   <div class="moive_title ">
+							   <h3>발신제한</h3>
+						   </div>
+					   </div>
+					   <div class="swiper-slide">
+						   <div class="poster">
+								<a href="action_movie/injil.html">
+									<img src="../image/injil.jpg" alt="인질">
+								</a>
+						   </div>
+						   <div class="moive_title ">
+							   <h3>인질</h3>
+						   </div>
+					   </div>
+					   <div class="swiper-slide">
+						   <div class="poster">
+								<a href="action_movie/daman.html">
+									<img src="../image/daman.jpg" alt="다만 악에서 구하소서">
+								</a>
+						  </div>
+						   <div class="moive_title ">
+							   <h3>다만 악에서 구하소서</h3>
+						   </div>
+					   </div>
+					   <div class="swiper-slide">
+						   <div class="poster">
+								<a href="action_movie/bando.html">
+									<img src="../image/bando.jpg" alt="반도">
+								</a>
+						   </div>
+						   <div class="moive_title ">
+							   <h3>반도</h3>
+						   </div>
+					   </div>
+					   <div class="swiper-slide">
+						   <div class="poster">
+								<a href="drama_movie/live.html">
+									<img src="../image/live.jpg" alt="#살아있다">
+								</a>
+						   </div>
+						   <div class="moive_title ">
+							   <h3>#살아있다</h3>
+						   </div>
+					   </div>
+				   </div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!-- movie 끝 -->
+	
+	<hr class = "line">
+	
+	<!-- 사이트 소개 시작-->
+	<div class ="area1">
+		<p class = "common_title">놀라운 기록</p>
+		<p class = "common_text">누적 고객수 5,000,000명<br>고객 만족도 95%<br>3년 연속 영화 사이트 1위<br>절대 후회하지 않을겁니다.</p>
+	</div>	
+	<hr class = "line">
+	<div class ="area2">
+		<p class = "common_title2">다양한 장르</p>
+		<p class = "common_text2">드라마, 로맨스, 코미디, 액션,<br>공포, 범죄, 스릴러까지 취향에<br> 따라 다양한 영화를 시청하세요.</p>
+	</div>	
+	<hr class = "line">
+	<div class ="area3">
+		<p class = "common_title">다양한 디바이스에서<br>시청하세요.</p>
+		<p class = "common_text">PC, 스마트폰, 스마트TV, 태블릿 등<br>인터넷이 연결되어 있는 디바이스에서<br>	언제든지 시청할 수 있습니다.</p>
+	</div>	
+	<hr class = "line">
+	<div class ="area4">
+		<p class = "common_title2">이동 중에도 감상을<br> 멈추지 마세요.</p>
+		<p class = "common_text2">보고 싶은 영화를 다운로드하여<br>오프라인으로 즐기세요.</p>
+	</div>	
+	<!-- 사이트 소개 끝-->
+	
+	<hr class = "line">
+	
+	<!-- question 시작 -->
+	<div class="container">
+		<section class = "question_area">
+			<li class = "question_title">자주 묻는 질문</li>
+			<table border = 1 width="800px;" height= "350px;">
+				<tr>
+					<td>
+						<footer>
+							<details class = "question">
+								<summary class="summary">
+									유니버스란 무엇인가요?
+								</summary>
+								<br>
+								유니버스는 드라마, 로맨스, 코미디, 액션, 공포, 범죄, 스릴러 등 다양한<br>장르의 영화를 인터넷 연결이 가능한 각종 디바이스에서 시청할 수 있는<br>
+								스트리밍 서비스 입니다.<br><br>일체의 광고 없이 원하는 시간에 원하는 영화를 언제든지 즐길 수<br>있으며 매주 새로운 영화가 제공됩니다.
+							</details>
+						</footer>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<footer>
+							<details class = "question">
+								<summary class="summary">
+									유니버스는 누가 이용할 수 있나요?
+								</summary>
+								<br>
+								유니버스의 회원이라면 보고 싶은 영화를 결제를 통해서 이용이 가능합니다.
+							</details>
+						</footer>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<footer>
+							<details class = "question">
+								<summary class="summary">
+									유니버스 요금은 얼마인가요?
+								</summary>
+								<br>
+								유니버스의 요금은 개봉일에 따라 3,000원부터 10,000원까지 다양합니다. 추가 비용이나 약정은 없습니다.
+							</details>
+						</footer>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<footer>
+							<details class = "question">
+								<summary class="summary">
+									어디에서 시청할 수 있나요?
+								</summary>
+								<br>
+								다양한 디바이스에서 언제 어디서나 시청이 가능합니다. PC에서<br>Universe.com을 통해 바로 시청할 수 있고, 
+								인터넷이 연결되어 있는<br>각종 디바이스에서도 언제든지 시청할 수 있습니다.
+							</details>
+						</footer>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<footer>
+							<details class = "question">
+								<summary class="summary">
+									어떤 콘텐츠를 볼 수 있나요?
+								</summary>
+								<br>
+								드라마, 로맨스, 코미디, 액션, 공포, 범죄, 스릴러 등 다양한 장르의<br>국내외 영화를 취향에 따라 시청하실 수 있습니다.
+							</details>
+						</footer>
+					</td>
+				</tr>
+			</table>
+		</section>
+	</div>
+	<!-- question 끝 -->
+	
+	<hr class = "line">
+	
+    <!-- footer 시작 -->
+	<div class = "footer">	
+		<footer>
+			<div class="container">
+				<div class="footer_tel">
+					ARS 1588-1829
+				</div>
+			</div>
+			<div class="container">
+				<div class="footer_infor">
+					<span id="logo2">
+						<div style = "color: white">Universe</div>	
+					</span>	
+					<ul>
+						<li>회사소개</li>
+						<li>채용정보</li>
+						<li>제휴/광고 문의</li>
+						<li>이용약관</li>
+						<li>개인정보 처리방침</li>
+						<li>청소년 보호정책</li>
+						<li>고객센터</li>
+					</ul>
+					<address>
+						<p><br>
+						   대표: 임병찬<br>
+						   주소: 청주시 흥덕구 죽천로 146번길 6 메디포스 8층(복대동, 헤라팰리스)<br>
+						   이메일: qud902@naver.com<br>
+						   사업자등록번호: 123-45-67890<br>
+						   클라우드 호스팅: Amazone Web ServicesInc<br><br>
+						   Copyright 2021 by Universe Inc. All right reserved
+						</p>
+					</address>
+				</div>
+			</div>
+		</footer>
+	</div>
+    <!-- footer 끝 -->
+   
+    <!-- 자바스크립트 라이브러리 -->
+    <script src="../js/jquery.min_1.12.4.js"></script> 
+    <script src="../js/modernizr-custom.js"></script>
+    <script src="../js/ie-checker.js"></script>
+    <script src="../js/swiper.js"></script>  <!-- 슬라이드 효과 js -->
+	<script>
+        //배너 이미지 슬라이드
+        var swiper = new Swiper('.swiper-container',{
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            autoplay: {
+                delay: 2500,
+            },
+        });
+        
+        //최신영화 이미지 슬라이드
+        var swiper = new Swiper('.swiper-container2',{
+            slidesPerView: 4,
+            spaceBetween: 24,
+            keyboard: {
+                enabled: true,
+                onlyInViewport: false,
+            },
+            autoplay: {
+                delay: 2800,
+            },
+            breakpoints: {
+                600: {
+                    slidesPerView: 1.4,
+                    spaceBetween: 24
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 24
+                },
+                960: {
+                    slidesPerView: 3,
+                    spaceBetween: 24
+                }
+            }
+        });
+    </script>
+</body>
+</html>
