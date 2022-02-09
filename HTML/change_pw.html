@@ -1,0 +1,61 @@
+<!DOCTYPE html> <!-- 비밀번호 변경 화면 -->
+<html lang="ko">
+
+<!-- head 시작 -->
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name = "description" content = "프로젝트">
+    <meta name="keywords" content="CGV, 유튜브, 영화, 넷플릭스, 티빙, 왓챠, 웨이브">
+	<title>유니버스(Universe)</title>
+    <link rel = "stylesheet" type="text/css" href="../CSS/member.css">
+	<link rel="shortcut icon" href="../image/universe.ico"> <!-- 파비콘 -->
+    <style>
+				@media(max-height: 700px) {
+			  .container{
+				height: 700px;
+			  }
+			}
+    </style>
+</head>
+<!-- head 끝 -->
+
+<!-- body 시작 -->
+<body>
+	<div class = "container">
+		<div class="member_wrapper"> 
+			<a href="../main.html" style= "text-decoration: none; text-align: center;"> <!-- 메인 페이지로 이동 -->
+				<h1 style="font-size: 45px; text-align: center; margin-top:20%; color:white;">Universe</h1> 
+			</a>
+			
+			<div class="member_area">
+				<header>
+					<h1 style = "text-align: center; color:white;">비밀번호 변경</h1>
+				</header>
+				
+				<br>
+				<div>
+					<label class = "lab">비밀번호 입력 </label>
+					<div>
+						<input type="password" class="member_input" placeholder="비밀번호(숫자,영문,특수문자 조합 최소8자)" name="password_new" id="new_pw">
+					</div>
+				</div>
+				<br>
+				<div>
+					<label class = "lab">비밀번호 재입력 </label>
+					<div>
+						<input type="password" class="member_input" placeholder="비밀번호(숫자,영문,특수문자 조합 최소8자)" name="password_new_CK" id="new_pw2">
+					</div>
+				</div>
+				<br>
+				<!-- 비밀번호 변경 버튼 클릭 시 성공적으로 변경 및 로그인 화면으로 이동 -->
+				<input type="button" class="member_btn" value="비밀번호 변경" onclick="change_pw()">
+			</div>
+		</div>     
+	</div>
+	
+	<!-- 자바스크립트 -->
+	<script type="text/javascript" src="../js/common.js"></script>
+</body>
+<!-- body 끝 -->
+</html>

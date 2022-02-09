@@ -1,0 +1,83 @@
+<!DOCTYPE html><!-- 아이디 및 비밀번호 찾기 화면 -->
+<html lang="ko">
+
+<!-- head 시작 -->
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name = "description" content = "프로젝트">
+	<meta name="keywords" content="CGV, 유튜브, 영화, 넷플릭스, 티빙, 왓챠, 웨이브">
+    <link rel="stylesheet" type="text/css" href="../CSS/find_idpw.css"> 
+    <title>유니버스(Universe)</title>
+	<link rel = "stylesheet" type="text/css" href="../CSS/member.css">
+	<link rel="shortcut icon" href="../image/universe.ico"> <!-- 파비콘 -->
+    <style>
+			@media(max-height: 1000px) { /* 화면의 크기가 작아졌을 때 */
+		  .container{                    /* 화면 크기 고정 */
+			height: 100%;
+		  }
+		}
+    </style>
+</head>
+<!-- head 끝 -->
+
+<!-- body 시작 -->
+<body>
+	<div class = "container">
+		<div class="member_wrapper"> 
+			<a href="../main.html" style= "text-decoration: none; text-align: center;">
+				<h1 style="font-size: 45px; text-align: center; margin-top:10%; color:white;">Universe</h1> 
+			</a>
+				
+			<div class = "member_area">
+				<header>
+					<h1 style = "text-align: center; color:white;">아이디 찾기</h1>
+				</header>
+				<br>
+				
+				<div>
+					<label class ="lab">이름</label><br> <!-- 휴대전화 입력 -->
+					<input type='text' class="member_input" name='name' placeholder='이름 입력' id="find_name"><br><br>
+					
+					<label class ="lab">휴대전화</label><br> <!-- 휴대전화 입력 -->
+					<input type='text' class="member_input" name='phone' placeholder='휴대전화 입력(-없이)' id="find_phone">
+				
+					<br><br>
+					
+					<!-- "인증번호 받기" 버튼 클릭 -->
+					<input type="button" class="member_btn" value="인증번호 받기" onclick="certification_number()">
+					<label class ="lab">인증번호 입력</label> <!-- 인증번호 입력 -->
+					<input type='text' class="member_input" name='phone' placeholder='인증번호 6자리 숫자 입력' id="certification_number">
+					
+					<br><br>
+					
+					<!-- "아이디 찾기" 버튼 클릭 -->
+					<input type="button" class="member_btn" value="아이디 찾기" onclick="find_id()">
+					
+					<hr style="border: solid 1px; color:gray;"><br>
+				
+					<header>
+						<h1 style = "text-align: center; color:white;">비밀번호 찾기</h1>
+					</header>
+				
+					<label class ="lab">아이디</label><br> <!-- 아이디 입력 -->
+					<input type='text' class="member_input" name='ID' placeholder='아이디 입력' id="find_id"><br><br>
+					
+					<label class ="lab">이름</label><br> <!-- 이름 입력 -->
+					<input type='text' class="member_input" name='name' placeholder='이름 입력' id="find_name2"><br><br>
+					
+					<label class ="lab">휴대전화</label><br> <!-- 휴대전화 입력 -->
+					<input type='text' class="member_input" name='phone' placeholder='휴대전화 입력(-없이)' id="find_phone2"><br><br>
+					
+					<!-- "비밀번호 찾기" 버튼 클릭 -->
+					<input type="button" class="member_btn" value="비밀번호 찾기" onclick="find_pw()">
+				</div>
+			</div>	
+		</div>
+	</div>
+	
+	<!-- 자바스크립트 -->
+	<script type="text/javascript" src="../js/common.js"></script>
+</body>
+<!-- body 끝 -->
+</html>

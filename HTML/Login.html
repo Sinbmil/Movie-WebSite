@@ -1,0 +1,60 @@
+<!DOCTYPE html><!-- 로그인 화면 -->
+<html lang="ko">
+
+<!-- head 시작 --> 
+<head>
+    <meta charset = "utf-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name = "description" content = "프로젝트">
+    <meta name="keywords" content="CGV, 유튜브, 영화, 넷플릭스, 티빙, 왓챠, 웨이브">
+	<title>유니버스(Universe)</title>
+    <link rel = "stylesheet" type="text/css" href="../CSS/login.css"> 
+	<link rel="shortcut icon" href="../image/universe.ico"> <!-- 파비콘 -->
+    <style> 
+			@media(max-height: 700px) { /* 화면의 크기가 작아졌을 때 */
+		  .container{    
+			height: 100%; 				/* 화면 크기 고정 */ 
+		  }
+		}
+    </style>
+</head>
+<!-- head 끝 -->
+
+<!-- body 시작 -->
+<body>
+	<div class = "container">
+		<center>
+			<div class="login_wrapper">
+				<div class="login_area">
+					<a href="../main.html" style= "text-decoration: none"> <!-- 메인 페이지로 이동 -->
+						<h1 style="font-size: 45px; text-align: center; color:white;">Universe</h1> 
+					</a>
+					
+					<header>
+						<h1 style = "text-align: center; color:white;">로그인</h1>
+					</header>
+					
+					<input type="text" class="input" placeholder="아이디를 입력해 주세요." name="ID" ID="id" onkeyup="enterKey()"> 		   <!-- ID 입력 -->
+					<input type="password" class="input" placeholder="비밀번호를 입력해 주세요." name="password" ID="pw" onkeyup="enterKey()"> <!-- PW 입력 -->
+					
+					<br><br>
+					<input type="button" class="btn" value="로그인" onclick="login()"> <!-- 로그인 후 메인 페이지로 이동 -->
+					<button type="button" class="btn" onclick ="document.location.href='member.html'" name="member_btn">회원가입</button> <!-- 회원가입 페이지로 이동 -->
+					<div class = "login-util">
+						<input type="checkbox" id="autologin" name="autologin" value="1"> 
+						<label>자동로그인</label>
+					</div>
+					<br>
+					<a href="find_idpw.html" style= "text-decoration: none">
+						<font color=#BDBDBD>아이디/비밀번호 찾기</font>
+					</a>
+				</div>
+			</div>
+		</center>
+	</div>
+	
+	<!-- 자바스크립트 -->
+	<script type="text/javascript" src="../js/common.js"></script>
+</body>
+<!-- body 끝 -->
+</html>
